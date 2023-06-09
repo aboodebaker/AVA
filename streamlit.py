@@ -165,7 +165,7 @@ Question: {input}
     stop=["\nObservation:"], 
     allowed_tools=tool_names
 )
-  query = st.text_input("Ask questions about your PDF file:")
+  query = st.text_input("Ask your questions:")
   agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True)
   if query:
     st.write(agent_executor.run(query))
