@@ -1,0 +1,7 @@
+langchain
+wikipedia
+gpt4free
+wolframalpha
+google-cloud-aiplatform
+google-search-results
+huggingface_hub
