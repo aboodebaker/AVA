@@ -52,7 +52,7 @@ def ai(input):
   return response
 def executor():
   st.header("Chat with Ava")
-  st.write("please note it will respond but it does take long. if you see running at the top then it is working. /nyou may experience errors. i am working on fixing it)
+  st.write("please note it will respond but it does take long. if you see running at the top then it is working. you may experience errors. i am working on fixing it")
   search = SerpAPIWrapper(serpapi_api_key='cc528133d4712378d13ee296bb2965e4c9d511ab22bd7c8819bd61bdc9d66c9c')
   wiki = WikipediaAPIWrapper()
   wolf = WolframAlphaAPIWrapper(wolfram_alpha_appid='R94U89-4738P78QQ7')
