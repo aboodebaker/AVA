@@ -149,8 +149,10 @@ Question: {input}
             raise ValueError(f"Could not parse LLM output: `{llm_output}`")
         action = match.group(1).strip()
         action_input = match.group(2)
-        st.write(action)
-        st.write('input:'+action_input)
+        if action == "Search":
+            st.write("searching the web for your answer")
+        elif action == "Wikipedia":
+            st.write("searching wikipedia for your answer")
         # Return the action and action input
         return AgentAction(tool=action, tool_input=action_input.strip(" ").strip('"'), log=llm_output)
   output_parser = CustomOutputParser()
